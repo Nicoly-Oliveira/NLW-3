@@ -43,6 +43,8 @@
                    <legend>Dados</legend>
                    <div class="map-container">
                        <div id="mapid"></div>
+                       <input type="hidden" name="lat">
+                       <input type="hidden" name="lng">
 
                        <footer>
                            <a href="#" id="select-point">
@@ -73,12 +75,12 @@
 
                            <div class="new-upload">
                                 <input name="images" placeholder="Cole o link da foto aqui" required>
-                                <span>
+                                <span onclick="deleteField(event)">
                                     <img src="./public/images/remove-file.svg" alt="Remover foto">
                                 </span>
                            </div>
                        </div>
-                       <button type="button">
+                       <button onclick="addPhotoField()" type="button">
                            <img src="./public/images/add-file.svg" alt="nova imagens" srcset="">
                        </button>
                    </div>
