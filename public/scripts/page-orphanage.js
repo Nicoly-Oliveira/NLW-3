@@ -49,3 +49,18 @@ function selectImage(event){
     // adicionar a classe .activer para este botão
     button.classList.add('active')
 }
+
+// Desafio
+function validate(event) {
+    // validar se lat e lng estão preenchidos
+    // pegar o campo com document.querySelector()
+    // ver se o value está vazio
+    // if
+    // quando a pessoa selecionar se torna false
+    const needsLatAndLng = true;
+    if(needsLatAndLng) {
+        event.preventDefault()
+        alert('Selecione um ponto no mapa')
+    }
+    
+}
